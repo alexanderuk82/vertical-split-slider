@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100;300;400;500;600;700&display=swap');
+
+/*========= GENERAL ROOT VARIABLES =======*/
+
+:root {
+  --main-font: 'M PLUS Code Latin', sans-serif;
+
+  // COLOURS:
+  --body-color: #fffffa;
+  --dark-black: hsl(0, 1%, 30%);
+  --ligh-black: hsl(0, 0%, 44%);
+  --price-box: hsl(307, 81%, 96%);
+  --border-title-first: rgb(255, 245, 254);
+  --border-title-second: hsl(135, 100%, 98%);
+  --btn-up: hsl(0, 85%, 92%);
+  --btn-down: hsl(0, 0%, 94%);
+}
+
+/*========= MIXING COMPILATIONS =======*/
+
+//====== FONTS MANAGEMENT ==========
+
+@mixin font($style) {
+  @if $style == 'title-bold' {
+    font-size: 5rem;
+    font-weight: 600;
+  }
+  @if $style == 'title-bold-light' {
+    font-size: 5rem;
+    font-weight: 300;
+  }
+  @if $style == 'price' {
+    font-size: 5.6rem;
+    font-weight: 300;
+    opacity: 0.7;
+    background-color: var(--price-box);
+    padding: 1rem;
+  }
+  @if $style == 'buy-btn' {
+    font-size: 2.2rem;
+    font-weight: regular;
+    background-color: transparent;
+    padding: 1.8rem 3rem;
+    text-transform: uppercase;
+    font-family: inherit;
+    cursor: pointer;
+    line-height: 0;
+    background-color: #fff;
+  }
+  @if $style == 'share-link' {
+    font-size: 2rem;
+    font-weight: regular;
+  }
+  @if $style == 'text-item' {
+    font-size: 2.5rem;
+    font-weight: regular;
+  }
+}
+
+//====== COLOR GENERATOR  ==========
+
+$count: 50;
+@mixin colors() {
+  @for $i from 1 through $count {
+    background-color: rgba(random(255), random(245), random(254), 0.14);
+  }
+}
+
+//====== MEDIA QUERIES PANEL  ==========
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == mobile-land {
+    @media (max-width: 48.75em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tabport {
+    @media (max-width: 60em) {
+      @content;
+    }
+  }
+}
+
+// =========CONTENT STYLE FOR THE REST
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @include responsive(tabport) {
+    font-size: 50%;
+  }
+}
+body {
+  font-family: var(--main-font);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: min-content 1fr 1fr;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  @include responsive(mobile-land) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+}
+
+.social-share {
+  height: 100vh;
+  @include font(share-link);
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+
+  & > * {
+    transform: rotate(-90deg);
+    align-self: center;
+    justify-self: center;
+  }
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  @include responsive(mobile-land) {
+    display: none;
+  }
+}
+
+.text-product {
+  transition: transform 0.5s ease-in-out;
+  position: relative;
+  @include responsive(mobile-land) {
+    grid-column: 1/1;
+    z-index: 1;
+    background-color: hsl(0deg 0% 100% / 66%);
+  }
+  .products {
+    text-align: right;
+    margin-right: 3rem;
+    display: grid;
+    row-gap: 2.5rem;
+    align-content: center;
+    height: 100vh;
+
+    h1 {
+      @include font(title-bold);
+      z-index: 10;
+
+      span {
+        @include font(title-bold-light);
+        position: relative;
+      }
+
+      span:before {
+        content: '';
+        width: 90%;
+        height: 1.5rem;
+        position: absolute;
+        top: 2.8rem;
+        left: -1rem;
+        z-index: -1;
+      }
+
+      span#border-1 {
+        &:before {
+          @include colors();
+        }
+      }
+      span#border-2 {
+        &:before {
+          @include colors();
+        }
+      }
+      span#border-3 {
+        &:before {
+          @include colors();
+        }
+      }
+    }
+
+    p {
+      @include font(text-item);
+    }
+
+    .prices {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      & > * {
+        &:not(:last-child) {
+          margin-right: 3rem;
+        }
+      }
+      .price {
+        @include font(price);
+      }
+
+      button {
+        @include font(buy-btn);
+        @include responsive(mobile-land) {
+          padding: 1.8rem 1.5rem;
+        }
+      }
+
+      .share {
+        display: none;
+
+        @include responsive(mobile-land) {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.image-product {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+
+  @include responsive(mobile-land) {
+    display: block !important;
+    position: absolute;
+  }
+  div {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    // position: absolute;
+  }
+}
+
+.btns-nav {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-20%);
+
+  @include responsive(mobile-land) {
+    z-index: 3;
+    width: 100%;
+    left: 0;
+    transform: translateX(0);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  button {
+    width: 7.7rem;
+    height: 6.8rem;
+    border: none;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 4rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  .btn-down,
+  .btn-up {
+    @include responsive(mobile-land) {
+      width: 100%;
+    }
+  }
+  .btn-up {
+    background-color: var(--btn-up);
+    background-image: url('../images/up-btn.svg');
+    transform: translateX(-0.5rem);
+  }
+  .btn-down {
+    background-position: 50% 50%;
+    background-color: var(--btn-down);
+    background-image: url('../images/down-btn.svg');
+  }
+}

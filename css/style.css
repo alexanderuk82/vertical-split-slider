@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100;300;400;500;600;700&display=swap");
+/*========= GENERAL ROOT VARIABLES =======*/
+:root {
+  --main-font: "M PLUS Code Latin", sans-serif;
+  --body-color: #fffffa;
+  --dark-black: hsl(0, 1%, 30%);
+  --ligh-black: hsl(0, 0%, 44%);
+  --price-box: hsl(307, 81%, 96%);
+  --border-title-first: rgb(255, 245, 254);
+  --border-title-second: hsl(135, 100%, 98%);
+  --btn-up: hsl(0, 85%, 92%);
+  --btn-down: hsl(0, 0%, 94%);
+}
+
+/*========= MIXING COMPILATIONS =======*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+@media (max-width: 60em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: -webkit-min-content 1fr 1fr;
+  grid-template-columns: min-content 1fr 1fr;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 48.75em) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+}
+
+.social-share {
+  height: 100vh;
+  font-size: 2rem;
+  font-weight: regular;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+}
+.social-share > * {
+  transform: rotate(-90deg);
+  align-self: center;
+  justify-self: center;
+}
+.social-share a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+@media (max-width: 48.75em) {
+  .social-share {
+    display: none;
+  }
+}
+
+.text-product {
+  transition: transform 0.5s ease-in-out;
+  position: relative;
+}
+@media (max-width: 48.75em) {
+  .text-product {
+    grid-column: 1/1;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.66);
+  }
+}
+.text-product .products {
+  text-align: right;
+  margin-right: 3rem;
+  display: grid;
+  row-gap: 2.5rem;
+  align-content: center;
+  height: 100vh;
+}
+.text-product .products h1 {
+  font-size: 5rem;
+  font-weight: 600;
+  z-index: 10;
+}
+.text-product .products h1 span {
+  font-size: 5rem;
+  font-weight: 300;
+  position: relative;
+}
+.text-product .products h1 span:before {
+  content: "";
+  width: 90%;
+  height: 1.5rem;
+  position: absolute;
+  top: 2.8rem;
+  left: -1rem;
+  z-index: -1;
+}
+.text-product .products h1 span#border-1:before {
+  background-color: rgba(100, 189, 244, 0.14);
+  background-color: rgba(21, 240, 243, 0.14);
+  background-color: rgba(216, 97, 209, 0.14);
+  background-color: rgba(20, 95, 161, 0.14);
+  background-color: rgba(241, 34, 79, 0.14);
+  background-color: rgba(93, 124, 94, 0.14);
+  background-color: rgba(110, 184, 210, 0.14);
+  background-color: rgba(89, 11, 123, 0.14);
+  background-color: rgba(99, 231, 51, 0.14);
+  background-color: rgba(158, 87, 143, 0.14);
+  background-color: rgba(117, 244, 135, 0.14);
+  background-color: rgba(123, 148, 213, 0.14);
+  background-color: rgba(27, 80, 249, 0.14);
+  background-color: rgba(18, 9, 153, 0.14);
+  background-color: rgba(97, 52, 65, 0.14);
+  background-color: rgba(227, 174, 92, 0.14);
+  background-color: rgba(93, 218, 46, 0.14);
+  background-color: rgba(22, 180, 120, 0.14);
+  background-color: rgba(43, 114, 205, 0.14);
+  background-color: rgba(186, 74, 203, 0.14);
+  background-color: rgba(181, 149, 139, 0.14);
+  background-color: rgba(44, 34, 67, 0.14);
+  background-color: rgba(116, 185, 185, 0.14);
+  background-color: rgba(162, 106, 214, 0.14);
+  background-color: rgba(71, 105, 14, 0.14);
+  background-color: rgba(158, 114, 57, 0.14);
+  background-color: rgba(100, 113, 200, 0.14);
+  background-color: rgba(222, 174, 118, 0.14);
+  background-color: rgba(202, 22, 190, 0.14);
+  background-color: rgba(171, 67, 159, 0.14);
+  background-color: rgba(10, 145, 41, 0.14);
+  background-color: rgba(41, 44, 109, 0.14);
+  background-color: rgba(190, 72, 230, 0.14);
+  background-color: rgba(39, 101, 193, 0.14);
+  background-color: rgba(123, 57, 49, 0.14);
+  background-color: rgba(234, 83, 245, 0.14);
+  background-color: rgba(50, 156, 56, 0.14);
+  background-color: rgba(216, 197, 215, 0.14);
+  background-color: rgba(185, 79, 131, 0.14);
+  background-color: rgba(22, 192, 166, 0.14);
+  background-color: rgba(185, 47, 50, 0.14);
+  background-color: rgba(231, 207, 227, 0.14);
+  background-color: rgba(198, 114, 149, 0.14);
+  background-color: rgba(185, 159, 35, 0.14);
+  background-color: rgba(89, 9, 162, 0.14);
+  background-color: rgba(145, 83, 233, 0.14);
+  background-color: rgba(7, 93, 247, 0.14);
+  background-color: rgba(184, 126, 149, 0.14);
+  background-color: rgba(114, 37, 245, 0.14);
+  background-color: rgba(177, 10, 20, 0.14);
+}
+.text-product .products h1 span#border-2:before {
+  background-color: rgba(29, 236, 45, 0.14);
+  background-color: rgba(137, 23, 124, 0.14);
+  background-color: rgba(239, 185, 180, 0.14);
+  background-color: rgba(53, 232, 3, 0.14);
+  background-color: rgba(119, 15, 176, 0.14);
+  background-color: rgba(209, 64, 86, 0.14);
+  background-color: rgba(82, 68, 193, 0.14);
+  background-color: rgba(182, 35, 35, 0.14);
+  background-color: rgba(101, 4, 45, 0.14);
+  background-color: rgba(140, 11, 50, 0.14);
+  background-color: rgba(4, 71, 228, 0.14);
+  background-color: rgba(132, 225, 51, 0.14);
+  background-color: rgba(143, 108, 141, 0.14);
+  background-color: rgba(213, 60, 223, 0.14);
+  background-color: rgba(22, 126, 254, 0.14);
+  background-color: rgba(87, 14, 215, 0.14);
+  background-color: rgba(31, 57, 242, 0.14);
+  background-color: rgba(119, 162, 25, 0.14);
+  background-color: rgba(144, 56, 104, 0.14);
+  background-color: rgba(53, 68, 131, 0.14);
+  background-color: rgba(75, 192, 54, 0.14);
+  background-color: rgba(161, 224, 206, 0.14);
+  background-color: rgba(75, 216, 54, 0.14);
+  background-color: rgba(32, 80, 171, 0.14);
+  background-color: rgba(53, 92, 61, 0.14);
+  background-color: rgba(91, 184, 122, 0.14);
+  background-color: rgba(120, 86, 46, 0.14);
+  background-color: rgba(164, 130, 228, 0.14);
+  background-color: rgba(59, 11, 144, 0.14);
+  background-color: rgba(215, 22, 17, 0.14);
+  background-color: rgba(77, 137, 185, 0.14);
+  background-color: rgba(109, 8, 126, 0.14);
+  background-color: rgba(192, 227, 20, 0.14);
+  background-color: rgba(102, 172, 86, 0.14);
+  background-color: rgba(171, 89, 30, 0.14);
+  background-color: rgba(171, 188, 33, 0.14);
+  background-color: rgba(239, 171, 31, 0.14);
+  background-color: rgba(241, 176, 61, 0.14);
+  background-color: rgba(113, 81, 28, 0.14);
+  background-color: rgba(210, 165, 99, 0.14);
+  background-color: rgba(171, 14, 138, 0.14);
+  background-color: rgba(23, 90, 28, 0.14);
+  background-color: rgba(168, 54, 80, 0.14);
+  background-color: rgba(29, 151, 30, 0.14);
+  background-color: rgba(202, 115, 121, 0.14);
+  background-color: rgba(155, 184, 95, 0.14);
+  background-color: rgba(45, 117, 205, 0.14);
+  background-color: rgba(35, 134, 204, 0.14);
+  background-color: rgba(62, 204, 42, 0.14);
+  background-color: rgba(3, 212, 144, 0.14);
+}
+.text-product .products h1 span#border-3:before {
+  background-color: rgba(140, 28, 38, 0.14);
+  background-color: rgba(144, 65, 147, 0.14);
+  background-color: rgba(38, 200, 90, 0.14);
+  background-color: rgba(182, 191, 182, 0.14);
+  background-color: rgba(203, 228, 217, 0.14);
+  background-color: rgba(84, 168, 254, 0.14);
+  background-color: rgba(140, 208, 117, 0.14);
+  background-color: rgba(69, 29, 182, 0.14);
+  background-color: rgba(228, 238, 182, 0.14);
+  background-color: rgba(27, 100, 141, 0.14);
+  background-color: rgba(133, 240, 28, 0.14);
+  background-color: rgba(163, 235, 200, 0.14);
+  background-color: rgba(184, 12, 30, 0.14);
+  background-color: rgba(118, 194, 115, 0.14);
+  background-color: rgba(163, 101, 160, 0.14);
+  background-color: rgba(180, 180, 73, 0.14);
+  background-color: rgba(107, 38, 96, 0.14);
+  background-color: rgba(103, 101, 246, 0.14);
+  background-color: rgba(110, 135, 226, 0.14);
+  background-color: rgba(94, 178, 54, 0.14);
+  background-color: rgba(208, 227, 250, 0.14);
+  background-color: rgba(94, 6, 65, 0.14);
+  background-color: rgba(2, 110, 241, 0.14);
+  background-color: rgba(144, 153, 21, 0.14);
+  background-color: rgba(63, 63, 228, 0.14);
+  background-color: rgba(237, 21, 39, 0.14);
+  background-color: rgba(148, 219, 138, 0.14);
+  background-color: rgba(186, 8, 235, 0.14);
+  background-color: rgba(195, 205, 238, 0.14);
+  background-color: rgba(201, 172, 110, 0.14);
+  background-color: rgba(177, 125, 35, 0.14);
+  background-color: rgba(208, 77, 118, 0.14);
+  background-color: rgba(122, 99, 183, 0.14);
+  background-color: rgba(195, 29, 19, 0.14);
+  background-color: rgba(96, 176, 136, 0.14);
+  background-color: rgba(83, 110, 140, 0.14);
+  background-color: rgba(229, 8, 154, 0.14);
+  background-color: rgba(96, 237, 88, 0.14);
+  background-color: rgba(33, 82, 78, 0.14);
+  background-color: rgba(87, 142, 198, 0.14);
+  background-color: rgba(238, 81, 220, 0.14);
+  background-color: rgba(251, 46, 122, 0.14);
+  background-color: rgba(202, 48, 200, 0.14);
+  background-color: rgba(90, 33, 129, 0.14);
+  background-color: rgba(88, 67, 17, 0.14);
+  background-color: rgba(132, 149, 100, 0.14);
+  background-color: rgba(55, 176, 31, 0.14);
+  background-color: rgba(91, 199, 158, 0.14);
+  background-color: rgba(82, 214, 17, 0.14);
+  background-color: rgba(176, 170, 193, 0.14);
+}
+.text-product .products p {
+  font-size: 2.5rem;
+  font-weight: regular;
+}
+.text-product .products .prices {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.text-product .products .prices > *:not(:last-child) {
+  margin-right: 3rem;
+}
+.text-product .products .prices .price {
+  font-size: 5.6rem;
+  font-weight: 300;
+  opacity: 0.7;
+  background-color: var(--price-box);
+  padding: 1rem;
+}
+.text-product .products .prices button {
+  font-size: 2.2rem;
+  font-weight: regular;
+  background-color: transparent;
+  padding: 1.8rem 3rem;
+  text-transform: uppercase;
+  font-family: inherit;
+  cursor: pointer;
+  line-height: 0;
+  background-color: #fff;
+}
+@media (max-width: 48.75em) {
+  .text-product .products .prices button {
+    padding: 1.8rem 1.5rem;
+  }
+}
+.text-product .products .prices .share {
+  display: none;
+}
+@media (max-width: 48.75em) {
+  .text-product .products .prices .share {
+    display: block;
+  }
+}
+
+.image-product {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+@media (max-width: 48.75em) {
+  .image-product {
+    display: block !important;
+    position: absolute;
+  }
+}
+.image-product div {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.btns-nav {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-20%);
+}
+@media (max-width: 48.75em) {
+  .btns-nav {
+    z-index: 3;
+    width: 100%;
+    left: 0;
+    transform: translateX(0);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.btns-nav button {
+  width: 7.7rem;
+  height: 6.8rem;
+  border: none;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 4rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+@media (max-width: 48.75em) {
+  .btns-nav .btn-down,
+.btns-nav .btn-up {
+    width: 100%;
+  }
+}
+.btns-nav .btn-up {
+  background-color: var(--btn-up);
+  background-image: url("../images/up-btn.svg");
+  transform: translateX(-0.5rem);
+}
+.btns-nav .btn-down {
+  background-position: 50% 50%;
+  background-color: var(--btn-down);
+  background-image: url("../images/down-btn.svg");
+}

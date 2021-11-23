@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="400" viewBox="0 0 512 400">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_4" data-name="Rectangle 4" width="512" height="400" transform="translate(171 226)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_1" data-name="Mask Group 1" transform="translate(-171 -226)" clip-path="url(#clip-path)">
+    <g id="content_for_scroll" data-name="content for scroll" transform="translate(-7.5 -515.5)">
+      <g id="Title">
+        <line id="Line_1" data-name="Line 1" x2="403" transform="translate(291.5 338.5)" fill="none" stroke="#f3fff6" stroke-width="18"/>
+        <text id="Skater_Roller_T-shirt" data-name="Skater Roller T-shirt" transform="translate(194 285)" fill="#4e4d4d" font-size="50" font-family="MPLUSCodeLatin-SemiBold, M PLUS Code Latin" font-weight="600"><tspan x="0" y="0">Skater Roller T-shirt</tspan></text>
+        <text id="Men_short_sleeve" data-name="Men short sleeve" transform="translate(716 347)" fill="#707070" font-size="50" font-family="MPLUSCodeLatin-Light, M PLUS Code Latin" font-weight="300"><tspan x="-400" y="0">Men short sleeve</tspan></text>
+      </g>
+      <g id="price_and_description" data-name="price and description" transform="translate(0 -23)">
+        <text id="Lorem_ipsum_dolor_sit_amet_consetetur_sadipscing_elitr_sed." data-name="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed." transform="translate(194 412)" fill="#707070" font-size="25" font-family="MPLUSCodeLatin-Regular, M PLUS Code Latin"><tspan x="112.5" y="25">Lorem ipsum dolor sit amet, </tspan><tspan x="37.5" y="56">consetetur sadipscing elitr, sed.</tspan></text>
+      </g>
+      <g id="btn_buy" data-name="btn buy">
+        <g id="Rectangle_2" data-name="Rectangle 2" transform="translate(396 520)" fill="#fff" stroke="#4e4d4d" stroke-width="3">
+          <rect width="247" height="62" stroke="none"/>
+          <rect x="1.5" y="1.5" width="244" height="59" fill="none"/>
+        </g>
+        <g id="Group_1" data-name="Group 1" transform="translate(4.023)">
+          <text id="buy_this_item" data-name="buy this item" transform="translate(451 560)" fill="#707070" font-size="22" font-family="MPLUSCodeLatin-Regular, M PLUS Code Latin" letter-spacing="0.065em"><tspan x="0" y="0">BUY THIS ITEM</tspan></text>
+          <g id="cart3" transform="translate(418.977 538.656)">
+            <path id="Path_1" data-name="Path 1" d="M0,2.956A.715.715,0,0,1,.724,2.25H2.894a.72.72,0,0,1,.7.535l.587,2.289h16.8a.731.731,0,0,1,.559.258.694.694,0,0,1,.15.586l-1.447,7.062a.718.718,0,0,1-.673.566l-13.6.667.415,2.16H18.812a.706.706,0,1,1,0,1.412H5.788a.719.719,0,0,1-.711-.576L2.908,5.933,2.33,3.662H.724A.715.715,0,0,1,0,2.956ZM4.488,6.487,5.7,12.814l13.232-.648L20.1,6.487Zm2.747,11.3a2.826,2.826,0,1,0,2.894,2.825A2.86,2.86,0,0,0,7.235,17.787Zm10.129,0a2.826,2.826,0,1,0,2.894,2.825A2.86,2.86,0,0,0,17.365,17.787ZM7.235,19.2a1.413,1.413,0,1,0,1.447,1.412A1.43,1.43,0,0,0,7.235,19.2Zm10.129,0a1.413,1.413,0,1,0,1.447,1.412A1.43,1.43,0,0,0,17.365,19.2Z" fill="#707070" fill-rule="evenodd"/>
+          </g>
+        </g>
+        <g id="prie" transform="translate(193 103)">
+          <rect id="Rectangle_1" data-name="Rectangle 1" width="125" height="117" transform="translate(40 384)" fill="#fff3fe"/>
+          <text id="_10" data-name="£10" transform="translate(61 465)" fill="#4e4d4d" font-size="56" font-family="MPLUSCodeLatin-Light, M PLUS Code Latin" font-weight="300" opacity="0.79"><tspan x="0" y="0">£10</tspan></text>
+        </g>
+      </g>
+    </g>
+    <g id="content_for_scroll-2" data-name="content for scroll">
+      <g id="Title-2" data-name="Title">
+        <line id="Line_1-2" data-name="Line 1" x2="403" transform="translate(186.5 338.5)" fill="none" stroke="#fff3fe" stroke-width="18"/>
+        <text id="Rock_Music_T-shirt" data-name="Rock Music T-shirt" transform="translate(194 285)" fill="#4e4d4d" font-size="50" font-family="MPLUSCodeLatin-SemiBold, M PLUS Code Latin" font-weight="600"><tspan x="0" y="0">Rock Music T-shirt</tspan></text>
+        <text id="Women_short_sleeve" data-name="Women short sleeve" transform="translate(194 347)" fill="#707070" font-size="50" font-family="MPLUSCodeLatin-Light, M PLUS Code Latin" font-weight="300"><tspan x="0" y="0">Women short sleeve</tspan></text>
+      </g>
+      <g id="price_and_description-2" data-name="price and description" transform="translate(0 -23)">
+        <text id="Lorem_ipsum_dolor_sit_amet_consetetur_sadipscing_elitr_sed.-2" data-name="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed." transform="translate(194 412)" fill="#707070" font-size="25" font-family="MPLUSCodeLatin-Regular, M PLUS Code Latin"><tspan x="112.5" y="25">Lorem ipsum dolor sit amet, </tspan><tspan x="37.5" y="56">consetetur sadipscing elitr, sed.</tspan></text>
+      </g>
+      <g id="btn_buy-2" data-name="btn buy">
+        <g id="Rectangle_2-2" data-name="Rectangle 2" transform="translate(396 520)" fill="#fff" stroke="#4e4d4d" stroke-width="3">
+          <rect width="247" height="62" stroke="none"/>
+          <rect x="1.5" y="1.5" width="244" height="59" fill="none"/>
+        </g>
+        <g id="Group_1-2" data-name="Group 1" transform="translate(4.023)">
+          <text id="buy_this_item-2" data-name="buy this item" transform="translate(451 560)" fill="#707070" font-size="22" font-family="MPLUSCodeLatin-Regular, M PLUS Code Latin" letter-spacing="0.065em"><tspan x="0" y="0">BUY THIS ITEM</tspan></text>
+          <g id="cart" transform="translate(418.977 538.656)">
+            <path id="Path_1-2" data-name="Path 1" d="M0,2.956A.715.715,0,0,1,.724,2.25H2.894a.72.72,0,0,1,.7.535l.587,2.289h16.8a.731.731,0,0,1,.559.258.694.694,0,0,1,.15.586l-1.447,7.062a.718.718,0,0,1-.673.566l-13.6.667.415,2.16H18.812a.706.706,0,1,1,0,1.412H5.788a.719.719,0,0,1-.711-.576L2.908,5.933,2.33,3.662H.724A.715.715,0,0,1,0,2.956ZM4.488,6.487,5.7,12.814l13.232-.648L20.1,6.487Zm2.747,11.3a2.826,2.826,0,1,0,2.894,2.825A2.86,2.86,0,0,0,7.235,17.787Zm10.129,0a2.826,2.826,0,1,0,2.894,2.825A2.86,2.86,0,0,0,17.365,17.787ZM7.235,19.2a1.413,1.413,0,1,0,1.447,1.412A1.43,1.43,0,0,0,7.235,19.2Zm10.129,0a1.413,1.413,0,1,0,1.447,1.412A1.43,1.43,0,0,0,17.365,19.2Z" fill="#707070" fill-rule="evenodd"/>
+          </g>
+        </g>
+        <g id="prie-2" data-name="prie" transform="translate(193 103)">
+          <rect id="Rectangle_1-2" data-name="Rectangle 1" width="125" height="117" transform="translate(40 384)" fill="#fff3fe"/>
+          <text id="_12" data-name="£12" transform="translate(61 465)" fill="#4e4d4d" font-size="56" font-family="MPLUSCodeLatin-Light, M PLUS Code Latin" font-weight="300" opacity="0.79"><tspan x="0" y="0">£12</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
