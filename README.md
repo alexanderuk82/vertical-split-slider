@@ -13,6 +13,6 @@
 <a href="https://www.youtube.com/c/DesignWeblondon"> AlexandersStudio</a></p>
 
 <h2>🎥 Wacth live component 👇👇</h2>
->>Link: https://marketing-social-agency.netlify.app/
-
-<img src="images/cover.jpg" widt="100%">
+>>Link: https://vertical-split-slider.netlify.app/
+<p></p>
+<img style="margin-top:2rem;" src="images/cover.jpg" widt="100%">
