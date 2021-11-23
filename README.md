@@ -3,7 +3,7 @@
 <ul>
 <li>Responsive Website component  Using HTML, CSS and JavaScript.</li>
 <li>Adding animations when scrolling.</li>
-<li>Randon generatgor label border colours with SASS.</li>
+<li>Randon generator label border colours with SASS.</li>
 <li>Compatible with all mobile devices and with a beautiful and pleasant user interface.</li>
 <li>adobe XD UI file included </li>
 
